@@ -24,7 +24,7 @@ import { setUser } from "../../../redux/reducer/UserReducer";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function LoginModal({ show, handleClose ,handleShowModalRegister,handleShowModalForgotPassword}) {
-  const URL_LOGIN = "http://3.1.205.196:8081/oauth2/authorization/google";
+  const URL_LOGIN = "http:/lsrc.me:80/oauth2/authorization/google";
   const [showPassword, setShowPassword] = useState(false);
   const [checked, setChecked] = useState(false);
   const [email, setEmail] = useState("");
