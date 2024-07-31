@@ -1,0 +1,297 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.flashCardSection { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+   
+}
+.flashCardItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+
+    
+}
+.flashCardList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.cardImage {
+    width:  35%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+.btn {
+    background-color: #3AA6B9;
+    color: white;
+    border: 1px solid #40A578;
+    border-radius: 50%;
+    cursor: pointer;
+    height: '50px';
+    width: '50px';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.btn_volumn {
+    background-color: #FF9EAA;
+    color: white;
+    box-shadow: 0 0 10px #FFD0D0;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    align-self: center;
+}
+
+.btn_volumn:hover {
+    background-color: #FFD0D0;
+}
+
+.btn:hover {
+    background-color: #40A578;
+}
+
+.cardFront {
+    width: 60vw;
+    height: 70vh;
+    font-size: 40px;
+    color: green;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.515);
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    
+}
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: #FFD0D0;
+    height: 100%;
+    border-radius: 10px;
+
+
+}
+
+
+.cardBack {
+    width: 60vw;
+    height: 70vh;
+    font-size: 20px;
+    color: green;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.515);
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+}
+
+.flash_card_back_rightside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 60%;
+    padding: 20px;
+    background-color: #FFD0D0;
+    text-align: left;
+    font-size: large;
+}
+
+.flash_card_back_leftside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    position: relative;
+    gap: 5px;
+
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.navigationButton {
+    color: rgb(0, 0, 0);
+    border: 2px solid #8e8585;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 50%;
+
+}
+
+.navigationButton:hover {
+    background-color: #7CCEC8;
+}
+
+.btn_noborder {
+    color: rgb(0, 0, 0);
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    align-self: center;
+}
+
+
+.btn_next:hover {
+    background-color: #8e8585;
+}
+
+.btn_noborder:hover {
+    background-color: #8e8585;
+}
+.testButton{
+   background-color: #db5e6c;
+   position: absolute;
+    right: 0;
+}
+
+.relatedFlashCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+   
+}
+
+@media (max-width: 1200px) {
+    .cardFront {
+       width: 100vw;
+       height: 50vh;
+    }
+
+    .cardBack {
+        width: 100vw;
+        height: 50vh;
+    }
+    .container{
+        gap:5px;
+    }
+    .testButton{
+        background-color: #db5e6c;
+        position: inherit;
+     }
+
+    .flash_card_back {
+        width: 80vw;
+        height: 70vh;
+        font-size: 30px;
+        color: green;
+        margin: 20px;
+        border-radius: 4px;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.515);
+    }
+
+    .flash_card_back_rightside{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        width: 60%;
+        padding: 20px;
+        background-color: #FFD0D0;
+        text-align: left;
+        font-size: large;
+    }
+
+    .flash_card_back_leftside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    
+    }
+    .flashCardItem{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}

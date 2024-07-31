@@ -1,0 +1,316 @@
+.btn-part{
+    background-color: #37B7C3 !important;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+.btn-part-select{
+    border-radius: 10px;
+    gap: 10;
+    box-sizing: border-box;
+    background-color: #153f43 !important;
+  
+}
+
+.answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.answer label{
+   margin-left: 10px;
+}
+
+.number-question{
+  background-color: #8cd0d6;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 0.5;
+  text-align: center;
+  
+}
+
+.question-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  border-width: 10px;  
+  flex-direction: column;
+  max-height: fit-content;
+}
+
+
+.question-board-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+
+  }
+
+
+
+  .question-cell:hover{
+    background-color: #37B7C3;
+  }
+
+  .question-cell-current{
+    background-color: #1976d2;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #071952; 
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    line-height: 49px;
+  }
+
+  .question-cell-selected{
+    background-color: #37B7C3;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #071952; 
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    line-height: 50px;
+  }
+
+   .question-cell:hover h6{
+    color: white;
+    }
+
+  .question-cell h6{
+    color: black;
+    text-align: center;
+    position: absolute;
+    background-color: #37B7C3;
+    top: 50%;
+    left: 40%;
+    line-height: 0%;
+  }
+ 
+  .combo-question-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+  
+  }
+  .combo-question-list-question{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .image-combo-question{
+    width: 50%;
+    max-height: fit-content;
+    
+  }
+
+/* CSS PAGE LAYOUT */
+
+.test-page-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+.test-container{
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  gap:5px;
+ 
+}
+
+.test-content-container{
+  display: flex;
+  width: 80%;
+  border: 1px solid #071952;
+  padding: 10px;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  gap: 10px;
+}
+
+.test-select-cell-container{
+  display: flex;
+  width: 20%;
+  border: 1px solid #071952;
+  padding: 10px;
+  flex-direction: column;
+  vertical-align: middle;
+  background-color: #FFFFFF;
+}
+
+/* Container for the entire test page */
+.test-page-container {
+  padding: 20px;
+}
+
+/* Title of the test */
+.test-title {
+  text-align: center;
+  width: 100%;
+}
+
+/* Main container for test content */
+.test-container {
+  display: flex;
+}
+
+/* Container for the content of the test */
+.test-content-container {
+  flex: 1;
+}
+
+/* Audio element styling */
+.test-audio {
+  width: 100%;
+}
+
+/* Container for part buttons */
+.test-part-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styling for part buttons */
+.btn-part {
+  background-color: #f0f0f0;
+}
+
+.btn-part-select {
+  background-color: #37B7C3;
+}
+
+/* Container for part content */
+.test-part-content {
+  width: 100%;
+  padding-top: 10px;
+}
+
+/* Container for the cell selection and submit button */
+.test-select-cell-container {
+  width: 300px;
+  padding: 10px;
+}
+
+/* Styling for the submit button */
+.btn-submit-test {
+  background-color: #37B7C3;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Styling for the icon inside the submit button */
+.btn-submit-icon {
+  margin-left: 10px;
+}
+
+/* Styling for the timer display */
+.test-timer {
+  margin-bottom: 10px;
+}
+
+/* Container for question sections */
+.test-question-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+/* Container for question cells */
+.test-question-cells {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+}
+
+/* Styling for question cells */
+.question-cell {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  line-height: 49px;
+  display: flex;
+}
+
+/* Styling for selected question cells */
+.question-cell-selected {
+  background-color: #d3f9f8;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  line-height: 49px;
+  display: flex;
+}
+
+/* Styling for the currently selected question cell */
+.question-cell-current {
+  background-color: #37B7C3;
+  color: #fff;
+  
+}
+
+/* query responsive */
+@media (max-width: 768px) {
+  .test-container{
+    flex-direction: column;
+  }
+  .test-content-container{
+    width: 100%;
+  }
+  .test-select-cell-container{
+    width: 100%;
+  }
+}
+
+
+
+
+  
+
+
+

@@ -1,0 +1,76 @@
+.test-card  {
+    width: calc(50% - 10px); /* 4 cột trên màn hình lớn */
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: 'left';
+    box-sizing: border-box;
+    border: 2px solid #258fd6;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+
+  .test-card__title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+  }
+
+
+
+  .test-card :hover {
+    cursor: pointer;
+  }
+
+  .test-card h6, p,span {
+   color: black;
+  }
+  @media (max-width: 1200px) {
+    .test-card {
+      width: calc(50% - 5px); /* 3 cột trên máy tính bảng */
+    }
+    
+  }
+
+  /* Điều chỉnh kích thước cột cho điện thoại di động */
+  @media (max-width: 768px) {
+    .test-card {
+      width: calc(100% - 5px); /* 2 cột trên điện thoại */
+    }
+  }
+
+  .test-card__image {
+    display: flex;
+    width: 50%;
+    border-radius: 5px;
+  }
+
+  .test-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .test-card__content {
+    width: 50%;
+    padding: 0 10px;
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .test-card__info-label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .test-card__content__info__item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }

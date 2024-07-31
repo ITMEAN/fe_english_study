@@ -1,0 +1,73 @@
+
+
+.banner{
+   
+    height: 100vh;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner2{
+   
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: 'red' ;
+}
+
+.introduction{
+    width: 70%;
+    background-color: #37B7C3 ;
+    padding: 20px;
+    
+}
+
+.introduction h1{
+    font-size: 3rem;
+    color: white;
+}
+
+.introduction p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.introduction H3{
+    font-size: 2rem;
+    color: white;
+}
+
+.btnStart{
+    background-color: #1d7ebe;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #1d7ebe;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(8, 255, 144, 0.5);
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.btnStart:hover{
+    background-color: #81c6f5;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #1d7ebe;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(9, 136, 255, 0.5);
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+}

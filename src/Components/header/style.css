@@ -1,0 +1,11 @@
+.navbar-button{
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.navbar-button:hover{
+    color: #f1f1f1;
+    cursor: pointer;
+}

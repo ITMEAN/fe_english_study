@@ -1,0 +1,36 @@
+.question_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.question_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap:10px;
+}
+.number_Question{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3AA6B9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+
+   
+}
+.question_image{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    
+}

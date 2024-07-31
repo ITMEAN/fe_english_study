@@ -1,0 +1,14 @@
+.table-header th{
+    background-color: #071952 !important;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.table-body td{
+    text-align: center;
+    text-justify: distribute;
+    vertical-align: middle;
+}
