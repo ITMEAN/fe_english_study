@@ -8,7 +8,7 @@ export default async function requestApi(endpoint, method, body, isInterceptors,
     };
 
     // let baseURL = "http://54.151.178.255:8080/api/v1/"
-    let baseURL = "http://18.140.64.235:8080/api/v1/"
+    let baseURL = "https://18.140.64.235/api/v1/"
 
     const instance = axios.create({ headers, baseURL });
 
