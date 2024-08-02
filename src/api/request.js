@@ -9,7 +9,8 @@ export default async function requestApi(endpoint, method, body, isInterceptors,
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
     };
 
-    let baseURL = "https://18.140.64.235/api/v1/"
+    // let baseURL = "http://54.151.178.255:8080/api/v1/"
+    let baseURL = "https://lsrc.me/api/v1/"
 
     const instance = axios.create({ headers, baseURL });
 
