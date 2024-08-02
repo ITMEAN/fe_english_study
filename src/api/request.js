@@ -5,6 +5,8 @@ export default async function requestApi(endpoint, method, body, isInterceptors,
     const headers = {
         "Accept": "application/json",
         "Content-Type": contenttype,
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
     };
 
     // let baseURL = "http://54.151.178.255:8080/api/v1/"
