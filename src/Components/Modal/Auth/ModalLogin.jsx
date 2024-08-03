@@ -24,7 +24,7 @@ import { setUser } from "../../../redux/reducer/UserReducer";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function LoginModal({ show, handleClose ,handleShowModalRegister,handleShowModalForgotPassword}) {
-  const URL_LOGIN = "http:/lsrc.me:8081/oauth2/authorization/google";
+  const URL_LOGIN = "https://lsrc.me/oauth2/authorization/google";
   const [showPassword, setShowPassword] = useState(false);
   const [checked, setChecked] = useState(false);
   const [email, setEmail] = useState("");
@@ -60,6 +60,11 @@ export default function LoginModal({ show, handleClose ,handleShowModalRegister,
       setErrorLogin("Email hoặc mật khẩu không chính xác")
     }
   };
+
+
+  const handleLoginGoogle = async () => {
+    window.location.href = URL_LOGIN;
+  }
 
 
 
@@ -118,9 +123,9 @@ export default function LoginModal({ show, handleClose ,handleShowModalRegister,
         </Box>
         <Box sx={{ display: "flex", justifyContent: "center",gap:'5px' }} marginTop={1}>
         <Box>
-            <Link to={URL_LOGIN} sx={{ display: "flex", justifyContent: "center",gap:'5px' }} marginTop={1}>
-                <Button variant="contained" style={{backgroundColor:'#DC3545'}}><Google/> Đăng nhập với google</Button>
-            </Link>
+           
+                <Button variant="contained" style={{backgroundColor:'#DC3545'}} onClick={handleLoginGoogle}><Google/> Đăng nhập với google</Button>
+            
             
          </Box>
        
