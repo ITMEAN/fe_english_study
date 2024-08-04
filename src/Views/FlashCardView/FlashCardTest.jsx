@@ -32,7 +32,8 @@ export default function FlashCardTest() {
     const handleCheck = () => {
         const currentVocabulary = vocabularies[currentVocabularyIndex];
         const isCorrect = userAnswer.trim().toLowerCase() === currentVocabulary?.word.toLowerCase();
-
+        alert(userAnswer.trim().toLowerCase());
+        alert(currentVocabulary?.word.toLowerCase());
         if (isCorrect) {
             setNumberCorrect(prev => prev + 1);
         } else {

@@ -34,6 +34,10 @@ export default function HistoryPage() {
     }
   }, [modelAccuracy]);
 
+  const formatDouble = (number) => {
+    return Number.parseFloat(number).toFixed(2);
+  };
+
   const data = {
     labels: labels,
     datasets: [
@@ -103,11 +107,11 @@ export default function HistoryPage() {
             <div className={styles.row}>
               <div className={styles.col_30}>
                 <span className={styles.label}>Độ chính xác</span>
-                <span className={styles.number}>{analysis.avgAccuracy}%</span>
+                <span className={styles.number}>{formatDouble(analysis.avgAccuracy)}%</span>
               </div>
               <div className={styles.col_30}>
                 <span className={styles.label}>Điểm trung bình</span>
-                <span className={styles.number}>{analysis.avgTotalScore}/990</span>
+                <span className={styles.number}>{formatDouble(analysis.avgTotalScore)}/990</span>
               </div>
               <div className={styles.col_30}>
                 <span className={styles.label}>Điểm cao nhất</span>

@@ -181,7 +181,7 @@ export default function ResultTest() {
                     return (
                       <div className="answer-question-item" key={index}>
                           <span style={{width:50,height:50,textAlign:'center',verticalAlign:'middle',backgroundColor:'#E8F2FF',borderRadius:'50%',justifyContent:'center',alignItems:'center',lineHeight:'50px'}}>{item.question.id}</span>
-                          <span>Đáp án: <span style={{fontWeight:'bold',color:'#00D000'}}>{convertNumberToCharAnswer(item.question.idAnswer)}</span></span>
+                          <span>Đáp án: <span style={{fontWeight:'bold',color:'#00D000'}}>{convertNumberToCharAnswer(item.question.answerId)}</span></span>
                           {
                             item.statusAnswer==="CORRECT" &&
                             <span>chọn: <span style={{fontWeight:'bold',color:'#00D000',fontStyle:'initial'}}>{convertNumberToCharAnswer(item.idAnswer)}</span></span>

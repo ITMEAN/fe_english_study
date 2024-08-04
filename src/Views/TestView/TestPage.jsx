@@ -14,21 +14,14 @@ export default function Test() {
   const [totalPage, setTotalPage] = useState(0);
   const navigation = useNavigate();
 
-  const copyTests = (listTest, number) => {
-    const newListTest = [];
-    for (let i = 0; i < number; i++) {
-      newListTest.push(listTest[0]);
-    }
-    return newListTest;
-  };
+ 
 
   const fetchTest = async () => {
     try {
       const response = await getAllTest(limit, page);
       // X10 data có trong mảng
-      const data = copyTests(response.tests, 10);
-      console.log(data);
-      setTest(data);
+      console.log(response);
+      setTest(response.tests);
       setTotalPage(response.totalPage);
     } catch (error) {
       console.log(error);
