@@ -5,6 +5,7 @@ import getUser from "../../helper/User";
 import FlashCard from "./component/FlashCard";
 import { findFlashCardLearnedByEmail, getFlashCardPublic } from "../../api/service/FlashCardService";
 import { Search } from "@mui/icons-material";
+import '../FlashCardView/css/flash-card.css'
 
 export default function FlashCardUserPage() {
   const [tests, setTests] = useState([]);
@@ -68,9 +69,9 @@ export default function FlashCardUserPage() {
           </div>
         </div>
 
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "flex-start", gap: 10 }}>
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "flex-start", gap: 10 ,width:'100%'}}>
           {tests.map((item, index) => (
-            <div key={index} style={{ width: "49%",display:'flex' }}>
+            <div key={index} className="flash_card_container">
               <FlashCard key={index} data={item} />
             </div>
           ))}

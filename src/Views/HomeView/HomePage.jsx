@@ -64,7 +64,7 @@ export default function HomePage() {
           <h1>Chức năng nổi bật</h1>
           
              <div className={styles.feature_container}>
-                <div className={styles.feature_item}>
+                <div className={styles.feature_item} onClick={() => navigation('/test-simulator')}>
                   <QuizOutlined style={{fontSize: 50}}/>
                   <h4>Thi thử</h4>
                   <p>
@@ -72,7 +72,7 @@ export default function HomePage() {
                   </p>
                    <h3>Bắt đầu</h3>
                  </div>
-                 <div className={styles.feature_item} >
+                 <div className={styles.feature_item} onClick={() => navigation('/flash-card')}>
                     <LightbulbOutlined style={{fontSize: 50}}/>
                     <h4>Flashcard</h4>
                     <p>
@@ -81,7 +81,7 @@ export default function HomePage() {
                     <h3>Bắt đầu</h3>
                  </div>
                      
-                 <div className={styles.feature_item} >
+                 <div className={styles.feature_item} onClick={() => {alert("chúc năng đang phát triển")}}>
                    <QuestionAnswerOutlined style={{fontSize: 50}}/>
                     <h4>Role play</h4>
                     <p>

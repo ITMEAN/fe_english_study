@@ -76,9 +76,9 @@ export default function Header() {
                             <span className="navbar-button" onClick={() => handleNavigate('/test-simulator')}>
                                 Thi Thử
                             </span>
-                            <span className="navbar-button">
-                                Khóa Học
-                            </span>
+                            {/* <span className="navbar-button">
+                                Role Play
+                            </span> */}
                             <span className="navbar-button" onClick={() => handleNavigate('/flash-card')}>
                                 Flash Card
                             </span>
