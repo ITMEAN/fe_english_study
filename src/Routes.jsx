@@ -2,7 +2,6 @@ import React, { Suspense, lazy } from "react";
 import { Routes as Routers, Route } from "react-router-dom";
 import getUser from "./helper/User";
 
-// Lazy load the components
 const PageNotFound = lazy(() => import("./Views/ErrorView/NotFoundPage"));
 const HomePage = lazy(() => import("./Views/HomeView/HomePage"));
 const Test = lazy(() => import("./Views/TestView/TestPage"));
@@ -15,7 +14,6 @@ const FlashCardStart = lazy(() => import("./Views/FlashCardView/FlashCardStart")
 const FlashCardTest = lazy(() => import("./Views/FlashCardView/FlashCardTest"));
 const ResetPassword = lazy(() => import("./Views/HomeView/ResetPassword"));
 
-// Admin views
 const HomeAdminPage = lazy(() => import("./admin/view/HomeAdminPage"));
 const TestAdminPage = lazy(() => import("./admin/view/TestAdminPage"));
 const AddTestPage = lazy(() => import("./admin/view/AddTestPage"));

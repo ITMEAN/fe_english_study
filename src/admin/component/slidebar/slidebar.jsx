@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <CDBSidebar textColor="white" backgroundColor="#071952"  style={{  height: '100vh' }}>  
+    <c textColor="white" backgroundColor="#071952"  style={{  height: '100vh' }}>  
       <CDBSidebarHeader textColor="white" prefix={<CDBIcon icon="bars" size="lg" style={{ color: 'white' }} />}>
         <Typography variant="h6" color="white">STUDY4</Typography>
       </CDBSidebarHeader>
@@ -47,7 +47,7 @@ const Sidebar = () => {
            <AccountMenu/>
         </div>
       </CDBSidebarFooter>
-    </CDBSidebar>
+    </c>
   );
 };
 
