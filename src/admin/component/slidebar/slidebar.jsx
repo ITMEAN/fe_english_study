@@ -33,12 +33,6 @@ const Sidebar = () => {
           >
             <Link to={"/admin/test"} style={{color:'white'}}>Đề Thi Thử Toeic</Link>
           </CDBSidebarMenuItem>
-          <CDBSidebarMenuItem
-            icon="sticky-note"
-            textColor="white"
-          >
-            <Link to={"/admin/test"} style={{color:'white'}}>Flash-Card</Link>
-          </CDBSidebarMenuItem>
         </CDBSidebarMenu>
       </CDBSidebarContent>
 
