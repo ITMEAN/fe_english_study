@@ -108,11 +108,11 @@ export default function FlashCardTest() {
                             Kiểm tra
                         </Button>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', height: '100%' }} className={styles.btn}>
+                    <div style={{ display: 'flex', alignItems: 'center', height: '100%' }} className={styles.btn}  onClick={handleSkip}>
                         <MoodBadOutlined
                             className={styles.btn_circle}
                             style={{ backgroundColor: "#EF5A6F" }}
-                            onClick={handleSkip}
+                           
                         />
                         <strong>Bỏ qua</strong>
                     </div>
