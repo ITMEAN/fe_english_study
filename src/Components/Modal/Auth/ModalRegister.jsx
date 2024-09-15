@@ -129,7 +129,7 @@ export default function RegisterModal({
         <Box sx={{ display: "flex", alignItems: "flex-end" }} marginBottom={2}>
           <AccountBox sx={{ color: "action.active", mr: 1, my: 0.5 }} />
           <TextField
-            label="Ho và tên"
+            label="Họ và tên"
             variant="standard"
             fullWidth
             onChange={(e) => handleSetName(e.target.value)}
@@ -145,7 +145,7 @@ export default function RegisterModal({
             id="outlined-adornment-password"
             type="password"
             endAdornment={<InputAdornment position="end"></InputAdornment>}
-            label="Mậu khẩu"
+            label="Mật khẩu"
             onChange={(e) => handleSetPassword(e.target.value)}
             helperText={errorPassword}
             error={errorPassword !== ""}
